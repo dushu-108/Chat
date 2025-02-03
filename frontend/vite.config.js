@@ -18,9 +18,9 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true
+    outDir: '../public',
+    emptyOutDir: true,
+    assetsDir: 'assets'
   },
   resolve: {
     alias: {
