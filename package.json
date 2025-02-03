@@ -5,7 +5,9 @@
 	"main": "server.js",
 	"scripts": {
 		"server": "nodemon backend/server.js",
-		"start": "node backend/server.js"
+		"start": "node backend/server.js",
+		"build": "cd frontend && npm install && npm run build",
+		"vercel-build": "npm run build"
 	},
 	"type": "module",
 	"keywords": [],
