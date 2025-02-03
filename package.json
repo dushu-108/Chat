@@ -5,8 +5,7 @@
 	"main": "server.js",
 	"scripts": {
 		"server": "nodemon backend/server.js",
-		"start": "node backend/server.js",
-		"build": "npm install"
+		"start": "node backend/server.js"
 	},
 	"type": "module",
 	"keywords": [],

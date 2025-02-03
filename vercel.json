@@ -1,10 +1,8 @@
 {
   "version": 2,
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "public",
   "builds": [
-    {
-      "src": "frontend/dist/**",
-      "use": "@vercel/static"
-    },
     {
       "src": "backend/server.js",
       "use": "@vercel/node"
@@ -16,9 +14,11 @@
       "dest": "backend/server.js"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/frontend/dist/$1",
-      "continue": true
+      "dest": "/$1"
     }
   ]
 }
