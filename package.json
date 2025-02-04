@@ -13,7 +13,11 @@
     "vercel-build": "npm run build",
     "lint": "eslint ."
   },
-  "keywords": ["chat", "real-time", "socket.io"],
+  "keywords": [
+    "chat",
+    "real-time",
+    "socket.io"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -22,11 +26,12 @@
     "dotenv": "^16.4.1",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.6",
     "socket.io": "^4.7.4"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
-    "nodemon": "^3.0.3",
-    "eslint": "^8.56.0"
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.3"
   }
 }
